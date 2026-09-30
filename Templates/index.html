@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cryptocurrency Price Tracker</title>
+
+    <script src="static/script.js"></script>
+    <link rel="stylesheet" href="static/style.css">
+    
+    
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+        <h1>Cryptocurrency Price Tracker</h1>
+        <p>Track Real-Time Cryptocurrency Market Data</p>
+    </header>
+
+    <!-- STATISTICS CARDS -->
+
+    <section class="cards">
+
+        <div class="card">
+            <h3>Total Coins</h3>
+            <p id="totalCoins">10</p>
+        </div>
+
+        <div class="card">
+            <h3>Top Gainer</h3>
+            <p id="topGainer">Bitcoin</p>
+        </div>
+
+        <div class="card">
+            <h3>Highest Market Cap</h3>
+            <p id="marketCap">Bitcoin</p>
+        </div>
+
+        <div class="card">
+            <h3>Most Expensive</h3>
+            <p id="expensiveCoin">Bitcoin</p>
+        </div>
+
+    </section>
+
+    <!-- SEARCH BAR -->
+
+    <section class="search-box">
+        <input type="text" id="searchInput" placeholder="Search Coin">
+    </section>
+
+    <!-- TABLE -->
+
+    <section class="table-section">
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>Coin Name</th>
+                    <th>Price</th>
+                    <th>24h Change</th>
+                    <th>Market Cap</th>
+                </tr>
+            </thead>
+
+            <tbody id="cryptoTable">
+
+                <tr>
+                    <td>Bitcoin</td>
+                    <td>$105000</td>
+                    <td>+2.5%</td>
+                    <td>$2.1T</td>
+                </tr>
+
+                <tr>
+                    <td>Ethereum</td>
+                    <td>$2500</td>
+                    <td>+1.2%</td>
+                    <td>$300B</td>
+                </tr>
+
+                <tr>
+                    <td>Solana</td>
+                    <td>$180</td>
+                    <td>+5.4%</td>
+                    <td>$90B</td>
+                </tr>
+
+                <tr>
+                    <td>XRP</td>
+                    <td>$2.1</td>
+                    <td>-0.8%</td>
+                    <td>$120B</td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </section>
+
+    <!-- CHART SECTION -->
+
+    <section class="chart-section">
+
+        <h2>📊Top Cryptocurrency Prices</h2>
+
+        <canvas id="cryptoChart"></canvas>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+        <p>© 2025 Cryptocurrency Price Tracker</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../static/script.js"></script>
+    <script src="static/script.js"></script>
+
+</body>
+
+</html>
